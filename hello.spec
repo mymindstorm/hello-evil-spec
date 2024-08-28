@@ -1,3 +1,5 @@
+%global debug_package %{nil}
+
 Name:           hello
 Version:        2.12.1
 Release:        6%{?dist}
