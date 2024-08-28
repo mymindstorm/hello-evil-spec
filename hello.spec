@@ -1,6 +1,6 @@
 Name:           hello
 Version:        2.12.1
-Release:        5%{?dist}
+Release:        6%{?dist}
 Epoch:          1
 Summary:        Prints a familiar, friendly greeting
 # All code is GPLv3+.
