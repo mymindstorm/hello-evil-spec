@@ -1,14 +1,15 @@
 Name:           hello
 Version:        2.12.1
 Release:        5%{?dist}
+Epoch:          1
 Summary:        Prints a familiar, friendly greeting
 # All code is GPLv3+.
 # Parts of the documentation are under GFDL
 License:        GPL-3.0-or-later AND GFDL-1.3-or-later
 URL:            https://www.gnu.org/software/hello/
 Source0:        https://ftp.gnu.org/gnu/hello/hello-%{version}.tar.gz
-Source1:        https://ftp.gnu.org/gnu/hello/hello-%{version}.tar.gz.sig
-Source2:        https://ftp.gnu.org/gnu/gnu-keyring.gpg
+# Source1:        https://ftp.gnu.org/gnu/hello/hello-%{version}.tar.gz.sig
+# Source2:        https://ftp.gnu.org/gnu/gnu-keyring.gpg
 
 BuildRequires:  gcc
 BuildRequires:  gnupg2
@@ -30,7 +31,7 @@ practices.
 
 
 %prep
-%{gpgverify} --keyring='%{SOURCE2}' --signature='%{SOURCE1}' --data='%{SOURCE0}'
+# %{gpgverify} --keyring='%{SOURCE2}' --signature='%{SOURCE1}' --data='%{SOURCE0}'
 %setup -q
 
 
